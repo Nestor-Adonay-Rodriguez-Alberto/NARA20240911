@@ -19,15 +19,15 @@ public class ProductNARA
     // ATRIBUTOS:
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer Id;
+    private Integer Id;
 
     @NotBlank(message = "El nombre es requerido")
-    public String NombreNARA;
+    private String NombreNARA;
 
-    public String DescripcionNARA;
+    private String DescripcionNARA;
 
     @NotNull(message = "El precio es requerido")
-    public BigDecimal Precio;
+    private BigDecimal Precio;
 
 
     // Accesors:
